@@ -104,4 +104,4 @@ async def lobinho(msg):
 
 
 
-client.run('NzQ1NjQzNDE2OTQ3MjYxNTU0.Xz0wiw.rqezBP_EvUz-GfTAwhF0ZB0l3Xo')
+client.run('chave aqui')
