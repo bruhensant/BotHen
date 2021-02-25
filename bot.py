@@ -1,5 +1,5 @@
 import discord
-import scrython
+#import scrython
 from discord.ext import commands
 from funcoes import dado, convert_usd, convert_ars
 
@@ -50,24 +50,7 @@ async def help(ctx):
 @client.command(aliases=['cmd','commander','comandante'])
 async def edh(ctx, cor = None, cmc = None):
     print('edh')
-    '''
-    s = 'https://scryfall.com/search?q=is%3Acommander'
-    a = '+cmc%3D'
-    b = '+c%3D'
-    
-    if cmc != None:
-        s = s + a + str(cmc)
-    else:
-        s = s
 
-    if cor != None:
-        s = s + b + str(cor)
-
-    if (cor == None) and (cmc == None):
-        await ctx.send(f'https://edhrec.com/random')
-    else:
-        await ctx.send(s)
-'''
     s = 'https://scryfall.com/random?q=is:commander'
     cr = '+c='
     cm = '+cmc='
@@ -82,26 +65,5 @@ async def edh(ctx, cor = None, cmc = None):
         await ctx.send(f'https://edhrec.com/random')
     else:
         await ctx.send(s)
-
-
-
-
-@client.command()
-async def lobinho(msg):
-    await msg.send("lobinho que ainda n tá pronto")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 client.run('chave aqui')
