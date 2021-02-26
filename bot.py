@@ -1,5 +1,5 @@
 import discord
-# import scrython
+import scrython
 from discord.ext import commands
 from funcoes import dado, convert_usd, convert_ars
 from chave import key
