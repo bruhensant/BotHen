@@ -1,5 +1,5 @@
 import discord
-import scrython
+# import scrython
 from discord.ext import commands
 from funcoes import dado, convert_usd, convert_ars
 from chave import key
@@ -51,7 +51,6 @@ async def help(ctx):
 @client.command(aliases=['cmd','commander','comandante'])
 async def edh(ctx, cor = None, cmc = None):
     print('edh')
-
     s = 'https://scryfall.com/random?q=is:commander'
     cr = '+c='
     cm = '+cmc='
@@ -66,5 +65,10 @@ async def edh(ctx, cor = None, cmc = None):
         await ctx.send(f'https://edhrec.com/random')
     else:
         await ctx.send(s)
+
+@client.command()
+async def git(ctx):
+    print('git')
+    await ctx.send('https://github.com/bruhensant/BotHen')
 
 client.run(key)
