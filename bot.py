@@ -2,6 +2,7 @@ import discord
 import scrython
 from discord.ext import commands
 from funcoes import dado, convert_usd, convert_ars
+from chave import key
 
 client = commands.Bot(command_prefix = '*')
 client.remove_command('help')
@@ -66,4 +67,4 @@ async def edh(ctx, cor = None, cmc = None):
     else:
         await ctx.send(s)
 
-client.run('chave aqui')
+client.run(key)
