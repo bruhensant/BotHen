@@ -65,7 +65,33 @@ async def edh(ctx, cor = None, cmc = None):
         await ctx.send(f'https://edhrec.com/random')
     else:
         await ctx.send(s)
+        
+'''
+@client.command()
+async def sol(ctx):
+    print('sol')
 
+    card = scrython.cards.Named(exact="Arcane Signet")
+
+    #rpz = 'https://c1.scryfall.com/file/scryfall-cards/large/front/0/a/'
+
+    #finalzin = '.jpg'
+
+    id = card.id()
+    #foi = rpz + ida + finalzin
+
+    #print(foi)
+    print(id)
+
+    #await ctx.send(id)
+    
+    with open('my_image.png', 'rb') as f:
+        picture = discord.File(f)
+        await channel.send(channel, picture)
+
+    #await ctx.send(file=discord.File(img))
+
+'''
 @client.command()
 async def git(ctx):
     print('git')
