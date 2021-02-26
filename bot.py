@@ -69,6 +69,6 @@ async def edh(ctx, cor = None, cmc = None):
 @client.command()
 async def git(ctx):
     print('git')
-    await ctx.send('https://github.com/bruhensant/BotHen')
+    await ctx.send('```https://github.com/bruhensant/BotHen```')
 
 client.run(key)
